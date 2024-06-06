@@ -188,7 +188,7 @@ h6 {
     margin: 0;
     padding: 0;
     list-style: none;
-    align-items: right;
+    float: right;
 }
 
 .nav-menu ul {
@@ -205,7 +205,7 @@ h6 {
 }
 
 .nav-menu > li {
-    float: right;
+    float: left;
 }
 
 .nav-menu li:hover > ul,
