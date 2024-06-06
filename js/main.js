@@ -131,3 +131,27 @@
 
 })(jQuery);
 
+ function validateForm() {
+        const name = document.querySelector('input[name="Name"]').value;
+        const email = document.querySelector('input[name="Email"]').value;
+        const message = document.querySelector('textarea[name="Message"]').value;
+
+        if (name.trim() === "") {
+            alert("Please enter your name.");
+            return false;
+        }
+
+        if (email.trim() === "") {
+            alert("Please enter your email.");
+            return false;
+        }
+
+        if (message.trim() === "") {
+            alert("Please enter your message.");
+            return false;
+        }
+
+        return true; 
+    }
+
+
