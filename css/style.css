@@ -1129,20 +1129,24 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .contact .form {
-    color: #666666;
+    color: #030000;
     font-weight: 300;
+    padding: 10px;    
+    width: 400px; 
+    margin: -185px 150px 10px 500px;
 }
 
 .contact .form input,
 .contact .form textarea {
     color: #666666;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 3600;
     padding: 10px 0;
     border: none;
     border-bottom: 1px solid #070707;
     border-radius: 0;
     box-shadow: none;
+    
 }
 
 .contact .form button[type="submit"] {
@@ -1151,10 +1155,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     letter-spacing: 1px;
     transition: 0.3s;
     cursor: pointer;
-    border-radius: 0;
+    border-radius: 10px;
     border: 1px solid #070707;
     background: #ffffff;
 }
+
 
 .contact .form button[type="submit"]:hover {
     background: #070707;
