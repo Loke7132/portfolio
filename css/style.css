@@ -1094,26 +1094,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 575px) {
-    .contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .contact .contact-info, .contact .form {
-        width: 100%;
-        margin: 10px 0;
-        padding: 10px;
-    }
-
-    .contact .contact-info p,
-    .contact .contact-info a,
-    .contact .contact-info i {
-        font-size: 14px;
-    }
-
-    .contact .form {
-        margin: 0;
-        padding: 10px;
+    .contact .contact-info p {
+        font-size: 16px;
     }
 }
 
