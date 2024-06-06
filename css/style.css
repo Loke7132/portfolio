@@ -188,7 +188,8 @@ h6 {
     margin: 0;
     padding: 0;
     list-style: none;
-    float: right;
+    /* align-items: right; */
+    float: right ;
 }
 
 .nav-menu ul {
@@ -205,6 +206,7 @@ h6 {
 }
 
 .nav-menu > li {
+   
     float: left;
 }
 
@@ -608,16 +610,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 .experience {
     position: relative;
     padding: 0;
+    width: 80%;
+    
+   
 }
+
 
 .experience .section-header p {
     margin:0;
+    
 }
 
 .experience .exp-column {
     margin-top: 30px;
     padding: 25px 30px;
     background: #e9ecef;
+    
+    
 }
 
 .experience .exp-column::before {
@@ -628,6 +637,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     right: 100%;
     left: 15px;
     background: #070707;
+    
 }
 
 .experience .exp-column::after {
@@ -638,6 +648,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     right: 15px;
     left: 100%;
     background: #070707;
+    
 }
 
 .experience .exp-column:hover::before {
@@ -876,10 +887,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     position: relative;
     height: 250px;
     overflow: hidden;
+    
 }
 
 .portfolio .portfolio-item figure {
-     background: #f7f6f6;
+    background: #f7f6f6;
     overflow: hidden;
     height: 220px;
     position: relative;
@@ -1159,7 +1171,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     border: 1px solid #070707;
     background: #ffffff;
 }
-
 
 .contact .form button[type="submit"]:hover {
     background: #070707;
