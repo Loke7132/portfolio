@@ -142,7 +142,7 @@
         }
 
         if (email.trim() === "") {
-            alert("Please enter your email.");
+            alert("Please enter your valid email.");
             return false;
         }
 
