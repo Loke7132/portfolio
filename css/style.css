@@ -1210,7 +1210,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* ============================= */
 /* --------- Footer CSS -------- */
 /* ============================= */
-
+@media (max-width: 770px) {
+    .footer  {
+        display: none;
+    }
+}
 .footer {
     position: relative;
     padding: 30px 0;
