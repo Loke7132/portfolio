@@ -1122,7 +1122,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         margin: 0;
     }
     .contact .section-header + .row .form {
-        margin-top: 20px;
+        margin-top: 1px;
         margin-left: -1px;
     }
 }
