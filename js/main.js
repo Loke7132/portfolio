@@ -154,4 +154,11 @@
         return true; 
     }
 
+document.getElementById('scrollBtn').addEventListener('click', function(event) {
+    // Ensure the link behaves normally by scrolling to the about section
+    setTimeout(() => {
+        this.style.display = 'none'; 
+    }, 500); 
+});
+
 
