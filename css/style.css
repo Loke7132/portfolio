@@ -1097,7 +1097,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: 300;
 }
 
-@media (max-width: 770px) {
+/* @media (max-width: 770px) {
     .contact .row {
         display: flex;
         flex-direction: column;
@@ -1129,7 +1129,27 @@ body.mobile-nav-active #mobile-nav-toggle {
         margin-top: 1px;
         margin-left: -1px;
     }
+} */
+@media (max-width: 770px) {
+    .contact .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .contact-info,
+    .contact .social {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .contact .form {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
 }
+
 
 
 
