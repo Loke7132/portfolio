@@ -1,0 +1,33 @@
+# Handle name variations and redirects
+RewriteEngine On
+
+# Redirect name variations to main portfolio
+RewriteCond %{REQUEST_URI} ^/lokesh/?$ [NC]
+RewriteRule ^(.*)$ / [L,R=301]
+
+RewriteCond %{REQUEST_URI} ^/shanmugam/?$ [NC]
+RewriteRule ^(.*)$ / [L,R=301]
+
+RewriteCond %{REQUEST_URI} ^/lokesh-shanmugam/?$ [NC]
+RewriteRule ^(.*)$ / [L,R=301]
+
+# Set canonical URL
+<IfModule mod_headers.c>
+    Header set Link "</> rel=\"canonical\""
+</IfModule>
+
+# Cache control for better performance
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html "access plus 1 day"
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+</IfModule>
+
+# Enable gzip compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript
+</IfModule>
+
+# Custom error page
+ErrorDocument 404 /index.html
